@@ -1,0 +1,15 @@
+# SwiftPM / Build
+.build/
+build/
+*.qfi
+*.qfi.tmp
+
+# macOS
+.DS_Store
+
+# Xcode / Editoren
+.swiftpm/
+*.xcodeproj/
+xcuserdata/
+DerivedData/
+.vscode/

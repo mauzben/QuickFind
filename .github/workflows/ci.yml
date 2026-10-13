@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build & self-test
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Swift version
+        run: swift --version
+
+      - name: Build (debug)
+        run: swift build
+
+      - name: Self-test
+        run: .build/debug/qf selftest
+
+      - name: Build (release, Apple silicon)
+        run: swift build -c release --arch arm64
+
+      - name: Build (release, Intel)
+        run: swift build -c release --arch x86_64
+
+      - name: Validate localization files
+        run: plutil -lint Resources/*.lproj/*.strings Resources/Info.plist
+
+      - name: Build app bundle
+        run: ./scripts/build-app.sh

@@ -1,0 +1,7 @@
+/* German texts for Info.plist */
+"NSHumanReadableCopyright" = "Copyright © 2026 mauzben. GNU GPL v3";
+"NSDesktopFolderUsageDescription" = "QuickFind indiziert Dateinamen, damit du sie sofort findest.";
+"NSDocumentsFolderUsageDescription" = "QuickFind indiziert Dateinamen, damit du sie sofort findest.";
+"NSDownloadsFolderUsageDescription" = "QuickFind indiziert Dateinamen, damit du sie sofort findest.";
+"NSRemovableVolumesUsageDescription" = "QuickFind indiziert Dateinamen auf externen Volumes.";
+"NSNetworkVolumesUsageDescription" = "QuickFind indiziert Dateinamen auf Netzwerkvolumes.";
