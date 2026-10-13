@@ -23,6 +23,7 @@ entirely locally, sends nothing over the network and contains no telemetry.
 
 ## Contents
 
+- [Why QuickFind?](#why-quickfind)
 - [Screenshots](#screenshots)
 - [Features](#features)
 - [Requirements](#requirements)
@@ -41,6 +42,21 @@ entirely locally, sends nothing over the network and contains no telemetry.
 - [License](#license)
 - [Disclaimer](#disclaimer)
 - [Trademarks & acknowledgements](#trademarks--acknowledgements)
+
+---
+
+## Why QuickFind?
+
+I started QuickFind because Apple's built-in search kept getting in my way. When I just wanted to find a file by its
+name, Spotlight and the Finder search were not what I was looking for. On Windows, *Everything* does exactly this:
+type a few letters and every matching file appears instantly. I wanted the same on my Mac, so I built it.
+
+> **Hobby project:** QuickFind is a hobby project that I develop in my spare time. Bug reports, ideas and pull
+> requests are welcome, but there is no guaranteed support and replies may take a while.
+
+> **Official source:** The only official source of QuickFind is this repository,
+> [github.com/mauzben/QuickFind](https://github.com/mauzben/QuickFind). Because the app asks for Full Disk Access,
+> please don't install builds from anywhere else.
 
 ---
 
